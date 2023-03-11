@@ -1,13 +1,17 @@
-const pdf = require('html-pdf');
-const request = require('request');
+const puppeteer = require('puppeteer');
 
-// Make a GET request to the web page you want to generate a PDF for
-request('http://127.0.0.1:8000/view/', function (error, response, body) {
-  if (!error && response.statusCode === 200) {
-    // Use html-pdf to generate a PDF from the response body
-    pdf.create(body).toFile('./example.pdf', function(err, res) {
-      if (err) return console.log(err);
-      console.log(res); // { filename: './example.pdf' }
-    });
-  }
-});
+(async () => {
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      '--disable-gpu'
+    ]
+  });
+  const page = await browser.newPage();
+  await page.goto('http://127.0.0.1:8000/view/');
+  // await page.waitForNavigation({ waitUntil: 'networkidle0' });
+  await page.pdf({ path: 'proposals/output.pdf', format: 'A4' });
+  // const pdfBuffer = await page.pdf({ format: 'A4' });
+  // fs.writeFileSync('output.pdf', pdfBuffer);
+  await browser.close();
+})();

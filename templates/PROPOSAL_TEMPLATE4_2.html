@@ -1,0 +1,390 @@
+{% load static %}
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+/*! CSS Used from: http://127.0.0.1:8000/static/user/app-assets/css/bootstrap.css */:root{--bs-blue:#49AFDA;--bs-indigo:#6610f2;--bs-purple:#FB9307;--bs-pink:#d63384;--bs-red:#ea5455;--bs-orange:#ff9f43;--bs-yellow:#ffc107;--bs-green:#28c76f;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#b8c2cc;--bs-gray-dark:#1e1e1e;--bs-gray-100:#babfc7;--bs-gray-200:#ededed;--bs-gray-300:#dae1e7;--bs-gray-400:#636363;--bs-gray-500:#adb5bd;--bs-gray-600:#b8c2cc;--bs-gray-700:#4e5154;--bs-gray-800:#1e1e1e;--bs-gray-900:#2a2e30;--bs-primary:#FB9307;--bs-secondary:#82868b;--bs-success:#28c76f;--bs-info:#49AFDA;--bs-warning:#ff9f43;--bs-danger:#ea5455;--bs-light:#f6f6f6;--bs-dark:#4b4b4b;--bs-primary-rgb:254,176,60;--bs-secondary-rgb:130,134,139;--bs-success-rgb:40,199,111;--bs-info-rgb:0,207,232;--bs-warning-rgb:255,159,67;--bs-danger-rgb:234,84,85;--bs-light-rgb:246,246,246;--bs-dark-rgb:75,75,75;--bs-white-rgb:255,255,255;--bs-black-rgb:34,41,47;--bs-body-rgb:110,107,123;--bs-font-sans-serif:Century Gothic,CenturyGothic,AppleGothic,sans-serif;--bs-font-monospace:Century Gothic,CenturyGothic,AppleGothic,sans-serif;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.45;--bs-body-color:#6e6b7b;--bs-body-bg:#f8f8f8}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(34,41,47,0)}h1,h3,h5,h6{margin-top:0;margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:#5e5873}h1{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h1{font-size:2rem}}h3{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h3{font-size:1.5rem}}h5{font-size:1.07rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}strong{font-weight:600}small{font-size:.857rem}img{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}.row{--bs-gutter-x:2rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x) * -.5);margin-left:calc(var(--bs-gutter-x) * -.5)}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col{flex:1 0 0%}.col-4{flex:0 0 auto;width:33.33333%}.col-6{flex:0 0 auto;width:50%}.col-8{flex:0 0 auto;width:66.66667%}.col-12{flex:0 0 auto;width:100%}.card{position:relative;display:flex;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:0 solid rgba(34,41,47,.125);border-radius:.428rem}.badge{display:inline-block;padding:.3rem .5rem;font-size:85%;font-weight:600;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.358rem}.badge:empty{display:none}.opacity-25{opacity:.25!important}.d-flex{display:flex!important}.border-info{border-color:#49afda!important}.h-100{height:100%!important}.flex-fill{flex:1 1 auto!important}.justify-content-end{justify-content:flex-end!important}.justify-content-between{justify-content:space-between!important}.align-items-center{align-items:center!important}.m-0{margin:0!important}.m-1{margin:1rem!important}.me-1{margin-right:1rem!important}.mb-1{margin-bottom:1rem!important}.ms-1{margin-left:1rem!important}.p-0{padding:0!important}.p-1{padding:1rem!important}.p-2{padding:1.5rem!important}.px-1{padding-right:1rem!important;padding-left:1rem!important}.px-2{padding-right:1.5rem!important;padding-left:1.5rem!important}.py-1{padding-top:1rem!important;padding-bottom:1rem!important}.pt-1{padding-top:1rem!important}.pb-1{padding-bottom:1rem!important}.fw-bold{font-weight:500!important}.text-start{text-align:left!important}.text-end{text-align:right!important}.text-center{text-align:center!important}.text-info{--bs-text-opacity:1;color:rgba(var(--bs-info-rgb),var(--bs-text-opacity))!important}.bg-info{--bs-bg-opacity:1;background-color:rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important}.rounded{border-radius:.357rem!important}/*! CSS Used from: http://127.0.0.1:8000/static/user/app-assets/css/bootstrap-extended.css */.card{margin-bottom:2rem;box-shadow:0 4px 24px 0 rgba(34,41,47,.1);transition:all .3s ease-in-out,background 0s,color 0s,border-color 0s}.font-small-1{font-size:.7rem!important}.font-small-2{font-size:.8rem!important}.font-small-4{font-size:1rem!important}/*! CSS Used from: http://127.0.0.1:8000/static/user/assets/css/style.css */body{font-family:"Century Gothic",sans-serif!important;color:#233648}h1,h3,h5,h6{font-family:Poppins!important}/*! CSS Used from: http://127.0.0.1:8000/static/user/assets/css/invoice.css */.quote-detail{width:100%;break-inside:avoid}.quote-detail th:nth-child(1){-webkit-border-radius:5px 0 0 0;-moz-border-radius:5px 0 0 0;border-radius:5px 0 0 0}.quote-detail th:nth-last-child(1){-webkit-border-radius:0 5px 0 0;-moz-border-radius:0 5px 0 0;border-radius:0 5px 0 0}.quote-detail th{padding:5px;text-align:center}.quote-detail th:nth-child(2){text-align:left}.quote-detail td{padding:5px;text-align:right}.quote-detail td:nth-child(2),.section td{text-align:left}.quote-detail thead{background-color:#233648;color:#f0f8ff}.quote-detail .section td{padding-left:30px}.quote-detail .tag{background-color:#233648;color:#f0f8ff}td:first-child{text-align:left}.taxes{width:100%}.taxes td{background-color:#d3d3d3}.taxes th{text-align:left;background-color:#233648;color:#f0f8ff;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.taxes td:last-child{text-align:right}/*! CSS Used from: http://127.0.0.1:8000/static/user/app-assets/css/colors.css */.border-info{border:1px solid #49afda!important}.border-bottom-info{border-bottom:1px solid #49afda}.bg-gradient-info{color:#fff;transition:all .2s ease;background-image:linear-gradient(47deg,#49afda,#1ce7ff);background-repeat:repeat}.bg-gradient-info:active,.bg-gradient-info:hover{color:#fff}.bg-gradient-info:hover:not(.disabled):not(:disabled){transform:translateY(-2px)}.bg-gradient-info:active{transform:translateY(0)}.bg-gradient-info:active,.bg-gradient-info:focus{background-image:linear-gradient(47deg,#00a1b5,#49afda);background-repeat:repeat}/*! CSS Used from: http://127.0.0.1:8000/static/user/app-assets/css/components.css */html{font-size:14px;height:100%;letter-spacing:.01rem}html body{height:100%;background-color:#f8f8f8;direction:ltr}html body p{line-height:1.5rem}@media screen and (min-width:0px){body:after{content:"xs - min-width: 0px"}}@media screen and (min-width:544px){body:after{content:"sm - min-width: 544px"}}@media screen and (min-width:768px){body:after{content:"md - min-width: 768px"}}@media screen and (min-width:992px){body:after{content:"lg - min-width: 992px"}}@media screen and (min-width:1200px){body:after{content:"xl - min-width: 1200px"}}body:after{display:none}/*! CSS Used from: Embedded */html{filter:opacity(1);print-color-adjust:exact;-webkit-print-color-adjust:exact;-webkit-filter:opacity(1)}#to_print{font-size:smaller}.quote-detail{font-size:12px}.colored{background-color:rgba(46,167%,212%,15%);padding:1rem}/*! CSS Used fontfaces */@font-face{font-family:Poppins;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');unicode-range:U+0900-097F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB}@font-face{font-family:Poppins;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+  html {
+        filter: opacity(1);
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        -webkit-filter: opacity(1);
+    }
+
+    #to_print {
+        font-size: smaller;
+    }
+
+
+    .quote-detail {
+        font-size: 12px;
+    }
+
+
+
+    .colored {
+        background-color: rgba(46, 167, 212, 15%);
+        /* border: 1px solid rgba(46, 167, 212, 10%); */
+        padding: 1rem;
+
+    }
+
+    .bg-light-info {
+        border-bottom: 1px thin red;
+    }
+</style>
+<div id="to_print" class="px-2 py-1" >
+    <!-- ROW BEGIN : pro & doc infos -->
+    <div class="row">
+        <div class="col-6">
+            <div class="card d-flex flex-fill mb-1">
+                <div class="d-flex align-items-center ">
+                    <img src="{% static 'pro/idmat/logo/IDMAT.png' %}" width="50" height="50" class="border-info">
+                    <h3 class="m-1">{{Proposal.pro.company_name}}</h3>
+                </div>
+                <div class=" pt-1">
+                    <small>{{Proposal.pro.company_legal_status}}</small><br>
+                    <small>{{Labels.w_frm_csProposalView_companyCode}} : {{Proposal.pro.company_reference}}</small><br />
+                    <small>{{Labels.w_txt_csProposalView_tax_number}} : {{Proposal.pro.company_tax_number}}</small><br />
+                    <small>{{Labels.w_frm_csProposalView_address}} : {{Proposal.pro.address.street}}, {{Proposal.pro.address.zipcode}} {{Proposal.pro.address.town}}</small><br />
+                    <small>{{Labels.w_frm_csProposalView_phone}} : {{Proposal.pro.company_phone}}</small><br>
+                    <small>{{Labels.g_frm_email}} : {{Proposal.pro.company_email}}</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 ">
+            <h1 class="bg-gradient-info p-2 text-center rounded">{% if not Proposal.indicative %}{{Labels.g_txt_indicative_proposal}}{% else %}{{Labels.g_txt_proposal}}{% endif %}</h1>
+            <span class=" badge bg-info ">{{Labels.w_txt_csProposalView_received}}</span>
+
+        </div>
+    </div>
+    <!-- ROW END : pro & doc infos -->
+    <!-- ROW BEGIN : quotes and client infos -->
+
+    <!-- ROW END : quotes and client infos -->
+    <div class="row ">
+        <div class="col-6 h-100 ">
+            <p><strong>{{Labels.w_frm_csProposalView_reference}} : {{Proposal.proposal_ref}}</strong><br>
+                <small>{{Labels.g_frm_version}} : {{Proposal.version}}</small><br>
+                <small>{{Labels.w_frm_receivedOn}} : {{Proposal.sending_date}}</small><br>
+                {% if Proposal.status == 'g_lst_prop_status_sent' and not isExpired %}<small>{{Labels.g_frm_expiresOn}} : {{Proposal.expiration_date}}</small><br>{% endif %}
+                {% if Proposal.status == 'g_lst_prop_status_signed' %}<small>{{Labels.g_frm_signedOn}} : {{Proposal.signed_date}}</small><br>{% endif %}
+                {% if isExpired %}<small>{{Labels.g_frm_expiredOn}} : {{Proposal.expiration_date}}</small><br>{% endif %}
+                {% if Proposal.status == 'g_lst_prop_status_revised' %}<small>{{Labels.g_frm_revisedOn}} : {{Proposal.revised_date}}</small><br>{% endif %}
+                {% if Proposal.status == 'g_lst_prop_status_refused' %}<small>{{Labels.g_frm_refusedOn}} : {{Proposal.refused_date}}</small>{% endif %}
+            </p>
+        </div>
+        <div class="col-6 h-100 ">
+            <div class="card colored d-flex flex-fill mb-1 border-info">
+                <p><strong>{{Gender}} {{Proposal.client.first_name}} {{Proposal.client.last_name}}</strong><br>
+                    {{Proposal.client.phone}}<br>
+                    {{Proposal.client.email}}<br>
+                    {{Proposal.work_address.street}}<br>
+                    {% if Proposal.work_address.complement %}{{Proposal.work_address.complement}}<br>{% endif %}
+                    {% if Proposal.Proposal.work_address.mailbox_compl %}{{Proposal.Proposal.work_address.mailbox_compl}}<br>{% endif %}
+                    {{Proposal.work_address.zipcode}} {{Proposal.work_address.town}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ROW BEGIN : Work & client infos -->
+    <div class="row ">
+        <div class="col-6 h-100 ">
+            <div class="card d-flex flex-fill">
+                <h5 class="pb-1 p-0 m-0">{{Labels.w_frm_csProposalView_purpose}} : {{Proposal.title}}</h5>
+                <p>
+                    {% if Proposal.provisional_start_date %}<small>{{Labels.g_provisional_start_date}} : {{Proposal.provisional_start_date}}</small><br>{% endif %}
+                    {% if Proposal.provisional_end_date %}<small>{{Labels.g_provisional_end_date}} : {{Proposal.provisional_end_date}}</small>{% endif %}
+                </p>
+
+            </div>
+        </div>
+        <div class="col-6 h-100">
+            <div class="card colored  align-items-center border-info p-1">
+                <h5 class="m-0 ">{{Labels.w_frm_csProposalView_netToPay}} : <span class="text-info">{{Proposal.total_taxincl_discounted}} € </span></h5>
+            </div>
+        </div>
+    </div>
+    <!-- ROW END : Work & client infos -->
+    <!-- TABLE BEGIN : Quote preview -->
+    <table class="quote-detail">
+        <thead>
+            <tr>
+                <th colspan="6" width="50%" class="text-start">{{Labels.g_frm_proposal_section_summary}}</th>
+                <th class="text-end">{{Labels.g_frm_totalPriceTaxFree}}</th>
+                <th class="text-end">{{Labels.g_frm_totalPriceTaxIncl}}</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for section in Proposal.sections %}
+            <tr>
+                <td colspan="6">{{section.title}}</td>
+                <td class="text-end">{{ section.total_price_incl_excl.excl }} € </td>
+                <td class="text-end">{{ section.total_price_incl_excl.incl }} € </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">{{Labels.w_frm_csProposalView_total_taxexcl_of_services}}</td>
+                <td class="colored border-bottom-info">{{proposal.total_taxexcl}} €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">{{Labels.g_frm_tax}}</td>
+                <td class="colored border-bottom-info">{{proposal.total_tax}} €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">{{Labels.g_frm_totalPriceTaxIncl}}</td>
+                <td class=" colored border-bottom-info">{{Proposal.total_taxincl}} €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">{{Labels.g_frm_discount}} ({{Proposal.discount_value}}%)</td>
+                <td class=" colored border-bottom-info">{{ Proposal.totalPriceTaxInclDiscounted }} €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">{{Labels.g_frm_totalPriceTaxInclDiscounted}}</td>
+                <td class="tag font-small-4 " align="right"><strong>{{Proposal.total_taxincl_discounted}} €</strong></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABLE END : Quote preview -->
+    <!-- ROW BEGIN : Billing schedual & Tax recap -->
+    <div class="row d-flex pt-1 font-small-1">
+        <div class="col-8 ">
+            <table class="quote-detail ">
+                <thead>
+                    <tr>
+                        <th class="text-start">{{Labels.g_frm_billingSchedule}}</th>
+                        <th>{{Labels.g_frm_billing_date}}</th>
+                        <th>{{Labels.g_frm_percentage}}</th>
+                        <th>{{Labels.g_frm_billing_amount}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for billing_schedule_line in Proposal.billing_schedule %}
+                        <tr>
+                            <td>{{billing_schedule_line.title}}</td>
+                            <td>{{billing_schedule_line.date}}</td>
+                            <td>{{billing_schedule_line.part}}%</td>
+                            <td>{{total_sum}} €</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-4  " style="padding-left: 0;">
+
+            <table class="quote-detail  taxes">
+                <thead>
+                    <tr>
+                        <th colspan="2"> <span class="px-1">{{Labels.g_frm_taxDetails}}</span></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for section in Proposal.sections %}
+                    <tr>
+                        <td>10 %</td>
+                        <td>10 €</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <!-- ROW END : Billing schedual & Tax recap -->
+
+    <!-- ROW BEGIN : Client electronic signature -->
+    <div class="row justify-content-end" style="page-break-after: always;">
+        <div class="col-6 ">
+            <h5 class="pt-1 p-0 m-0">{{Labels.w_txt_csProposalView_signature}} :</h5>
+            {% if Proposal.status == 'g_lst_prop_status_signed' %}<div class=" border-info rounded">
+                <h6 class="text-bg-light opacity-25 p-2">{{Proposal.sign_block}}</h6>
+            </div>
+            {% else %}
+            <div class=" border-info rounded">
+                <h6 class="text-bg-light opacity-25 p-2">{{ Labels.w_frm_csProposalView_sign_block }}</h6>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <!-- ROW END : Client electronic signature -->
+
+
+
+    <!-- TABLE BEGIN : Quote detail -->
+    <div class="row pt-1" >
+        <table class="quote-detail">
+
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Designation</th>
+                    <th>Qté</th>
+                    <th>Unité</th>
+                    <th>Prix unit. HT</th>
+                    <th>TVA</th>
+
+                    <th>Prix total HT</th>
+                    <th>Prix total TTC</th>
+
+                </tr>
+            </thead>
+            {% for section in Proposal.sections %}
+            <tbody>
+                <tr class="section">
+                    <td colspan="8" class=" bg-gradient-info">{{ section.title }}</td>
+                </tr>
+                {% for item in section.items %}
+                <tr>
+                    <td>{{item.order_item}}</td>
+                    <td>{{item.title}}</td>
+                    <td><span class="fw-bold">{{item.qty}}</span></td>
+                    <td><span class="fw-bold">{{item.type_work}}</span></td>
+                    <td><span class="fw-bold">{% if item.price %}{{item.price}} €{% else %}{{Labels.g_txt_offer}}{% endif %} </span></td>
+                    <td><span class="fw-bold">{{item.tax}}%</span></td>
+                    <td><span class="fw-bold">{% if item.price %}{{item.total_taxexcl}} €{% else %}{{Labels.g_txt_offer}}{% endif %} </span></td>
+                    <td><span class="fw-bold">{% if item.price %}{{item.total_taxincl}} €{% else %}{{Labels.g_txt_offer}}{% endif %} </span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+    <!-- TABLE END : Quote detail -->
+
+    <!-- ROW BEGIN : Pictures gallery -->
+   {% if Proposal.gallery|length > 0 %}
+    <div class="row mt-1 justify-content-center mt-2" style="page-break-after: always;">
+        <div class="col-12">
+            <div class="card colored border-info w-100 mx-0">
+                <h5 class="pb-1 p-0 m-0">{{ Labels.w_txt_csProposalView_photos }}</h5>
+                <div class="d-flex justify-content-evenly ">
+                    {% for photo in Proposal.gallery %}
+                        <img src={{photo}} width="200">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endif %}
+    <!-- ROW END : Pictures gallery -->
+
+    <!-- ROW BEGIN : Billing and worksite adresses / Payement methods & complementary mentions -->
+    <div class="row d-flex pt-1 font-small-1 px-1 " >
+        <div class="col-12">
+            <div class="row justify-content-between">
+                {% if Proposal.work_address != Proposal.client.address %}
+                <div class="col me-1  card colored border-info">
+
+                    <h5>Adresse de résidence principale</h5>
+                    <p>{{Proposal.client.address.street}}<br>
+                        {% if Proposal.client.address.complement %}{{Proposal.client.address.complement}}<br>{% endif %}
+                        {% if Proposal.client.address.mailbox_compl %}{{Proposal.client.address.mailbox_compl}}<br>{% endif %}
+                        {{Proposal.client.address.zipcode}} {{Proposal.client.address.town}}
+                    </p>
+                </div>
+                {% endif %}
+                <!-- Invoice legal options  -->
+                <!-- Invoice Legal options -->
+                {% if Proposal.billing_address != Proposal.client.address %}
+                <div class="col ms-1  card colored border-info">
+
+                    <h5>{{Labels.w_frm_csProposalView_billingAddress}}</h5>
+                    <p>{{Proposal.billing_address.street}}<br>
+                        {% if Proposal.billing_address.complement %}{{Proposal.billing_address.complement}}<br>{% endif %}
+                        {% if Proposal.billing_address.mailbox_compl %}{{Proposal.billing_address.mailbox_compl}}<br>{% endif %}
+                        {{Proposal.billing_address.zipcode}} {{Proposal.billing_address.town}}
+                </div>
+                {% endif %}
+            </div>
+            <div class="row justify-content-between">
+                <div class="col me-1 card colored border-info">
+
+                    <h5 class="pb-1 p-0 m-0">{{Labels.w_frm_csProposalView_acceptedMethods}}</h5>
+                    <p>
+                        {{Proposal.accepted_payment_modes}}
+                    </p>
+                </div>
+                <div class="col ms-1  card colored border-info">
+
+                    <h5 class="pb-1 p-0 m-0">{{Labels.g_txt_additional_information}} </h5>
+                    <p>
+                        {{Proposal.additional_conditions}}<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col me-1 mb-1  card colored border-info">
+                    <h5 class="pb-1 p-0 m-0">{{Labels.w_txt_csProposalView_bank_identification}}</h5>
+                    <p>{{Proposal.pro.iban|safe}}</p>
+                </div>
+                <div class="col ms-1 mb-1   card colored border-info">
+                    <h5 class="pb-1 p-0 m-0">{{Labels.w_txt_csProposalView_insurance_policy}} </h5>
+                    <strong>{{Labels.w_frm_csProposalView_insurer_name}} :</strong> {{Proposal.pro.insurance_name}}<br>
+                    <strong>{{Labels.w_frm_csProposalView_insurer_number}} :</strong> {{Proposal.pro.insurance_policy_number}}<br>
+                    <strong>{{Labels.w_frm_csProposalView_insurance_geo_area}} :</strong> {{Proposal.pro.insurance_geo_coverage}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ROW END : Billing and worksite adresses / Payement methods & complementary mentions -->
+
+
+    <!-- ROW BEGIN :  CERTIFICATE -->
+    {% if Proposal.pro.certificate_images|length > 0 %}
+    <div class="row font-small-1 mt-4">
+        <div class="col-12 ">
+            <div class="card colored border-info d-flex flex-fill font-small-1">
+                <h5 class="pb-1 p-0 m-0">{{ Labels.w_txt_csProposalView_certificates }}</h5>
+                <div class="justify-content-center">
+                    {% for image in Proposal.pro.certificate_images %}
+                    <img src={{image}} height="150">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <!-- ROW END : CERTIFICATE -->
+
+    
+    <!-- ROW BEGIN :  Message -->
+    <div class="row  ">
+        <div class="col-12 ">
+            <div class="card  border-info font-small-2 text-center m-0" style="background-color: lightgrey;">
+                <p class="m-0">{{Labels.g_msg_pdf_footer_message1}} <br>
+                    {{Labels.g_msg_pdf_footer_message2}} </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ROW END : Message -->
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</html>

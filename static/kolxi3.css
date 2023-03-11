@@ -1,0 +1,945 @@
+
+  /*!
+ * Bootstrap v5.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+ :root {
+    --bs-blue: #49AFDA;
+    --bs-indigo: #6610f2;
+    --bs-purple: #FB9307;
+    --bs-pink: #d63384;
+    --bs-red: #ea5455;
+    --bs-orange: #ff9f43;
+    --bs-yellow: #ffc107;
+    --bs-green: #28c76f;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #b8c2cc;
+    --bs-gray-dark: #1e1e1e;
+    --bs-gray-100: #babfc7;
+    --bs-gray-200: #ededed;
+    --bs-gray-300: #dae1e7;
+    --bs-gray-400: #636363;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #b8c2cc;
+    --bs-gray-700: #4e5154;
+    --bs-gray-800: #1e1e1e;
+    --bs-gray-900: #2a2e30;
+    --bs-primary: #FB9307;
+    --bs-secondary: #82868b;
+    --bs-success: #28c76f;
+    --bs-info: #49AFDA;
+    --bs-warning: #ff9f43;
+    --bs-danger: #ea5455;
+    --bs-light: #f6f6f6;
+    --bs-dark: #4b4b4b;
+    --bs-primary-rgb: 254, 176, 60;
+    --bs-secondary-rgb: 130, 134, 139;
+    --bs-success-rgb: 40, 199, 111;
+    --bs-info-rgb: 0, 207, 232;
+    --bs-warning-rgb: 255, 159, 67;
+    --bs-danger-rgb: 234, 84, 85;
+    --bs-light-rgb: 246, 246, 246;
+    --bs-dark-rgb: 75, 75, 75;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 34, 41, 47;
+    --bs-body-rgb: 110, 107, 123;
+    --bs-font-sans-serif: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    --bs-font-monospace: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.45;
+    --bs-body-color: #6e6b7b;
+    --bs-body-bg: #f8f8f8; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth; } }
+  
+  body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(34, 41, 47, 0); }
+  
+  h1, h3, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #5e5873; }
+  
+  h1 {
+    font-size: calc(1.325rem + 0.9vw); }
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 2rem; } }
+  
+  h3 {
+    font-size: calc(1.275rem + 0.3vw); }
+  
+  @media (min-width: 1200px) {
+    h3 {
+      font-size: 1.5rem; } }
+  
+  h5 {
+    font-size: 1.07rem; }
+  
+  h6 {
+    font-size: 1rem; }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  
+  strong {
+    font-weight: 600; }
+  
+  small {
+    font-size: 0.857rem; }
+  
+  img {
+    vertical-align: middle; }
+  
+  table {
+    caption-side: bottom;
+    border-collapse: collapse; }
+  
+  th {
+    text-align: inherit;
+    text-align: -webkit-match-parent; }
+  
+  thead,
+  tbody,
+  tr,
+  td,
+  th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0; }
+  
+  button:focus:not(:focus-visible) {
+    outline: 0; }
+  
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer; }
+  
+  ::-moz-focus-inner {
+    padding: 0;
+    border-style: none; }
+  
+  ::-webkit-datetime-edit-fields-wrapper,
+  ::-webkit-datetime-edit-text,
+  ::-webkit-datetime-edit-minute,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-year-field {
+    padding: 0; }
+  
+  ::-webkit-inner-spin-button {
+    height: auto; }
+  
+  /* rtl:raw:
+  [type="tel"],
+  [type="url"],
+  [type="email"],
+  [type="number"] {
+    direction: ltr;
+  }
+  */
+  ::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  
+  ::-webkit-color-swatch-wrapper {
+    padding: 0; }
+  
+  ::file-selector-button {
+    font: inherit; }
+  
+  ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button; }
+  
+  .row {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5); }
+  
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y); }
+  
+  .col {
+    flex: 1 0 0%; }
+  
+  .col-4 {
+    flex: 0 0 auto;
+    width: 33.33333%; }
+  
+  .col-6 {
+    flex: 0 0 auto;
+    width: 50%; }
+  
+  .col-8 {
+    flex: 0 0 auto;
+    width: 66.66667%; }
+  
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%; }
+  
+  .form-control[type="file"]:not(:disabled):not([readonly]) {
+    cursor: pointer; }
+  
+  .form-control::file-selector-button {
+    padding: 0.571rem 1rem;
+    margin: -0.571rem -1rem;
+    margin-inline-end: 1rem;
+    color: #6e6b7b;
+    background-color: #fff;
+    pointer-events: none;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: 1px;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0s, border 0s; }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .form-control::file-selector-button {
+      transition: none; } }
+  
+  .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: #f2f2f2; }
+  
+  .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+    background-color: #f2f2f2; }
+  
+  .form-control-sm::file-selector-button {
+    padding: 0.188rem 0.857rem;
+    margin: -0.188rem -0.857rem;
+    margin-inline-end: 0.857rem; }
+  
+  .form-control-lg::file-selector-button {
+    padding: 0.75rem 1.143rem;
+    margin: -0.75rem -1.143rem;
+    margin-inline-end: 1.143rem; }
+  
+  .form-control-color:not(:disabled):not([readonly]) {
+    cursor: pointer; }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(34, 41, 47, 0.125);
+    border-radius: 0.428rem; }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    font-size: 85%;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.358rem; }
+  
+  /* rtl:begin:ignore */
+  
+  /* rtl:end:ignore */
+  
+  /* rtl:options: {
+    "autoRename": true,
+    "stringMap":[ {
+      "name"    : "prev-next",
+      "search"  : "prev",
+      "replace" : "next"
+    } ]
+  } */
+  
+  .visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important; }
+  
+  .opacity-25 {
+    opacity: 0.25 !important; }
+  
+  .d-flex {
+    display: flex !important; }
+  
+  .border-bottom {
+    border-bottom: 1px solid #ebe9f1 !important; }
+  
+  .border-info {
+    border-color: #49AFDA !important; }
+  
+  .h-100 {
+    height: 100% !important; }
+  
+  .flex-fill {
+    flex: 1 1 auto !important; }
+  
+  .justify-content-end {
+    justify-content: flex-end !important; }
+  
+  .justify-content-between {
+    justify-content: space-between !important; }
+  
+  .align-items-center {
+    align-items: center !important; }
+  
+  .m-0 {
+    margin: 0 !important; }
+  
+  .m-1 {
+    margin: 1rem !important; }
+  
+  .me-1 {
+    margin-right: 1rem !important; }
+  
+  .mb-1 {
+    margin-bottom: 1rem !important; }
+  
+  .ms-1 {
+    margin-left: 1rem !important; }
+  
+  .p-0 {
+    padding: 0 !important; }
+  
+  .p-1 {
+    padding: 1rem !important; }
+  
+  .p-2 {
+    padding: 1.5rem !important; }
+  
+  .px-1 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important; }
+  
+  .px-2 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important; }
+  
+  .py-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important; }
+  
+  .pt-1 {
+    padding-top: 1rem !important; }
+  
+  .pb-1 {
+    padding-bottom: 1rem !important; }
+  
+  .fw-bold {
+    font-weight: 500 !important; }
+  
+  .text-start {
+    text-align: left !important; }
+  
+  .text-end {
+    text-align: right !important; }
+  
+  .text-center {
+    text-align: center !important; }
+  
+  /* rtl:begin:remove */
+  
+  /* rtl:end:remove */
+  
+  .text-info {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important; }
+  
+  .bg-info {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important; }
+  
+  .rounded {
+    border-radius: 0.357rem !important; }
+  
+  .form-check:not(.form-switch) .form-check-input:disabled:not(:checked) {
+    background-color: #efefef;
+    border-color: #efefef;
+    opacity: 1; }
+  
+  .form-check-input:not(:disabled):checked {
+    box-shadow: 0 2px 4px 0 rgba(254, 176, 60, 0.4); }
+  
+  .form-check-input:not(:disabled):indeterminate {
+    background-size: 85%; }
+  
+  /* Switches */
+  
+  .form-switch .form-check-input:not(:checked) {
+    background-color: #e2e2e2; }
+  
+  .form-switch .form-check-input:not(:disabled):checked, .form-switch .form-check-input:not(:disabled):focus {
+    box-shadow: none !important; }
+  
+  .form-switch .form-check-input:not(:checked) ~ .form-check-label .switch-text-left {
+    opacity: 0; }
+  
+  .form-switch .form-check-input:not(:checked) ~ .form-check-label .switch-text-right {
+    opacity: 1; }
+  
+  /* Textarea with Counter */
+  
+  /* Number Type Input Box Scss for - Remove arrow on hover */
+  
+  .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus {
+    box-shadow: none !important; }
+  
+  /* ===============================================================================================
+      File Name: navbar.scss
+      Description: Contain header navigation bar, vertical main navigation bar and
+      horiznotal main navigation bar related SCSS.
+      ----------------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ================================================================================================*/
+  
+  /* ----------- iPhone 5, 5S  iPhone 6----------- */
+  /* Landscape */
+  
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */
+  
+  .card {
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+    transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; }
+  
+  /* Component Specific */
+  
+  /*=========================================================================================
+    File Name: progress.scss
+    Description: Extended bootstrap progress bar scss.
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+    Author: PIXINVENT
+    Author URL: http://www.themeforest.net/user/pixinvent
+    ----------------------------------------------------------------------------------------
+  ==========================================================================================*/
+  
+  /* ===============================================================================================
+    File Name: list-group.scss
+    Description: Contain list item, list group related extended SCSS.
+    ----------------------------------------------------------------------------------------------
+    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+    Author: PIXINVENT
+    Author URL: http://www.themeforest.net/user/pixinvent
+  ================================================================================================*/
+  
+  .font-small-1 {
+    font-size: 0.7rem !important; }
+  
+  .font-small-2 {
+    font-size: 0.8rem !important; }
+  
+  .font-small-4 {
+    font-size: 1rem !important; }
+  
+  .btn-dark:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #4b4b4b; }
+  
+  .btn-dark:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-dark:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(75, 75, 75, 0.12); }
+  
+  .btn-relief-dark:hover:not(.disabled):not(:disabled) {
+    background-color: #626262; }
+  
+  .btn-outline-dark:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(75, 75, 75, 0.04);
+    color: #4b4b4b; }
+  
+  .btn-outline-dark:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):focus {
+    background-color: rgba(75, 75, 75, 0.2);
+    color: #4b4b4b; }
+  
+  .form-check-dark .form-check-input:not(:disabled):checked, .form-check-dark .form-check-input:not(:disabled):focus {
+    border-color: #4b4b4b;
+    box-shadow: 0 2px 4px 0 rgba(75, 75, 75, 0.4); }
+  
+  .btn-primary:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #FB9307; }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-primary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(254, 176, 60, 0.12); }
+  
+  .btn-relief-primary:hover:not(.disabled):not(:disabled) {
+    background-color: #887ef2; }
+  
+  .btn-outline-primary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(254, 176, 60, 0.04);
+    color: #FB9307; }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):focus {
+    background-color: rgba(254, 176, 60, 0.2);
+    color: #FB9307; }
+  
+  .form-check-primary .form-check-input:not(:disabled):checked, .form-check-primary .form-check-input:not(:disabled):focus {
+    border-color: #FB9307;
+    box-shadow: 0 2px 4px 0 rgba(254, 176, 60, 0.4); }
+  
+  .btn-secondary:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #82868b; }
+  
+  .btn-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-secondary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(130, 134, 139, 0.12); }
+  
+  .btn-relief-secondary:hover:not(.disabled):not(:disabled) {
+    background-color: #8f9397; }
+  
+  .btn-outline-secondary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(130, 134, 139, 0.04);
+    color: #82868b; }
+  
+  .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):focus {
+    background-color: rgba(130, 134, 139, 0.2);
+    color: #82868b; }
+  
+  .form-check-secondary .form-check-input:not(:disabled):checked, .form-check-secondary .form-check-input:not(:disabled):focus {
+    border-color: #82868b;
+    box-shadow: 0 2px 4px 0 rgba(130, 134, 139, 0.4); }
+  
+  .btn-success:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #28c76f; }
+  
+  .btn-success:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-success:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(40, 199, 111, 0.12); }
+  
+  .btn-relief-success:hover:not(.disabled):not(:disabled) {
+    background-color: #33d67c; }
+  
+  .btn-outline-success:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(40, 199, 111, 0.04);
+    color: #28c76f; }
+  
+  .btn-outline-success:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):focus {
+    background-color: rgba(40, 199, 111, 0.2);
+    color: #28c76f; }
+  
+  .form-check-success .form-check-input:not(:disabled):checked, .form-check-success .form-check-input:not(:disabled):focus {
+    border-color: #28c76f;
+    box-shadow: 0 2px 4px 0 rgba(40, 199, 111, 0.4); }
+  
+  .border-info {
+    border: 1px solid #49AFDA !important; }
+  
+  .border-bottom-info {
+    border-bottom: 1px solid #49AFDA; }
+  
+  .btn-info:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #49AFDA; }
+  
+  .btn-info:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-info:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(0, 207, 232, 0.12); }
+  
+  .btn-relief-info:hover:not(.disabled):not(:disabled) {
+    background-color: #03e4ff; }
+  
+  .btn-outline-info:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(0, 207, 232, 0.04);
+    color: #49AFDA; }
+  
+  .btn-outline-info:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .btn-outline-info:not(:disabled):not(.disabled):focus {
+    background-color: rgba(0, 207, 232, 0.2);
+    color: #49AFDA; }
+  
+  .form-check-info .form-check-input:not(:disabled):checked, .form-check-info .form-check-input:not(:disabled):focus {
+    border-color: #49AFDA;
+    box-shadow: 0 2px 4px 0 rgba(0, 207, 232, 0.4); }
+  
+  .btn-warning:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #ff9f43; }
+  
+  .btn-warning:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-warning:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(255, 159, 67, 0.12); }
+  
+  .btn-relief-warning:hover:not(.disabled):not(:disabled) {
+    background-color: #ffac5d; }
+  
+  .btn-outline-warning:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(255, 159, 67, 0.04);
+    color: #ff9f43; }
+  
+  .btn-outline-warning:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .btn-outline-warning:not(:disabled):not(.disabled):focus {
+    background-color: rgba(255, 159, 67, 0.2);
+    color: #ff9f43; }
+  
+  .form-check-warning .form-check-input:not(:disabled):checked, .form-check-warning .form-check-input:not(:disabled):focus {
+    border-color: #ff9f43;
+    box-shadow: 0 2px 4px 0 rgba(255, 159, 67, 0.4); }
+  
+  .btn-danger:hover:not(.disabled):not(:disabled) {
+    box-shadow: 0 8px 25px -8px #ea5455; }
+  
+  .btn-danger:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-flat-danger:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(234, 84, 85, 0.12); }
+  
+  .btn-relief-danger:hover:not(.disabled):not(:disabled) {
+    background-color: #ed6b6c; }
+  
+  .btn-outline-danger:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(234, 84, 85, 0.04);
+    color: #ea5455; }
+  
+  .btn-outline-danger:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none; }
+  
+  .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .btn-outline-danger:not(:disabled):not(.disabled):focus {
+    background-color: rgba(234, 84, 85, 0.2);
+    color: #ea5455; }
+  
+  .form-check-danger .form-check-input:not(:disabled):checked, .form-check-danger .form-check-input:not(:disabled):focus {
+    border-color: #ea5455;
+    box-shadow: 0 2px 4px 0 rgba(234, 84, 85, 0.4); }
+  
+  .bg-gradient-dark:hover:not(.disabled):not(:disabled),
+  .btn-gradient-dark:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-primary:hover:not(.disabled):not(:disabled),
+  .btn-gradient-primary:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-secondary:hover:not(.disabled):not(:disabled),
+  .btn-gradient-secondary:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-success:hover:not(.disabled):not(:disabled),
+  .btn-gradient-success:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-info {
+    color: #fff;
+    transition: all 0.2s ease;
+    background-image: linear-gradient(47deg, #49AFDA, #1ce7ff);
+    background-repeat: repeat; }
+  
+  .bg-gradient-info:hover, .bg-gradient-info:active {
+    color: #fff; }
+  
+  .bg-gradient-info:hover:not(.disabled):not(:disabled),
+  .btn-gradient-info:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-info:active {
+    transform: translateY(0); }
+  
+  .bg-gradient-info:active, .bg-gradient-info:focus {
+    background-image: linear-gradient(47deg, #00a1b5, #49AFDA);
+    background-repeat: repeat; }
+  
+  .bg-gradient-warning:hover:not(.disabled):not(:disabled),
+  .btn-gradient-warning:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  .bg-gradient-danger:hover:not(.disabled):not(:disabled),
+  .btn-gradient-danger:hover:not(.disabled):not(:disabled) {
+    transform: translateY(-2px); }
+  
+  
+  html {
+    font-size: 14px;
+    height: 100%;
+    letter-spacing: 0.01rem;
+    /*
+      * Blank page
+      */ }
+  
+  html body {
+    height: 100%;
+    background-color: #f8f8f8;
+    direction: ltr; }
+  
+  html body p {
+    line-height: 1.5rem; }
+  
+  /*
+  * Col 3 layout for detached and general type
+  */
+  
+  /*=========================================================================================
+      File Name: sidebar.scss
+      Description: content sidebar specific scss.
+      ----------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ==========================================================================================*/
+  
+  /*=========================================================================================
+      File Name: navigation.scss
+      Description: Common mixin for menus, contain dark and light version scss.
+      ----------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ==========================================================================================*/
+  
+  /*=========================================================================================
+      File Name: search.scss
+      Description: Search  functionality.
+      ----------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ==========================================================================================*/
+  
+  /*=========================================================================================
+      File Name: demo.scss
+      Description: CSS used for demo purpose only. Remove this css from your project.
+      ----------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ==========================================================================================*/
+  
+  /*=========================================================================================
+      File Name: customizer.scss
+      Description: CSS used for demo purpose only. Remove this css from your project.
+      ----------------------------------------------------------------------------------------
+      Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ==========================================================================================*/
+  
+  @media screen and (min-width: 0px) {
+    head {
+      font-family: "xs 0px"; }
+    body:after {
+      content: "xs - min-width: 0px"; } }
+  
+  @media screen and (min-width: 544px) {
+    head {
+      font-family: "sm 544px"; }
+    body:after {
+      content: "sm - min-width: 544px"; } }
+  
+  @media screen and (min-width: 768px) {
+    head {
+      font-family: "md 768px"; }
+    body:after {
+      content: "md - min-width: 768px"; } }
+  
+  @media screen and (min-width: 992px) {
+    head {
+      font-family: "lg 992px"; }
+    body:after {
+      content: "lg - min-width: 992px"; } }
+  
+  @media screen and (min-width: 1200px) {
+    head {
+      font-family: "xl 1200px"; }
+    body:after {
+      content: "xl - min-width: 1200px"; } }
+  
+  head {
+    clear: both; }
+  
+  body:after {
+    display: none; }
+  
+  /* Bootstrap Touchspin */
+  
+  /* Number Type Input Box Scss for Touchspin - Remove arrow for firefox */
+  .quote-detail{
+      width: 100%;
+      break-inside: avoid;
+  }
+  
+  .quote-detail   th:nth-child(1){
+  -webkit-border-radius: 5px 0px 0px 0px; 
+  -moz-border-radius: 5px 0px 0px 0px; 
+  border-radius: 5px 0px 0px 0px; 
+  }
+  
+  .quote-detail   th:nth-last-child(1){
+  -webkit-border-radius: 0px 5px 0px 0px;
+  -moz-border-radius: 0px 5px 0px 0px; 
+  border-radius: 0px 5px 0px 0px;
+  }
+  .quote-detail  th{
+      padding: 5px;
+      text-align: center;
+  }
+   .quote-detail  th:nth-child(2){
+     text-align: left;
+  }
+  
+  .quote-detail  td{
+      padding: 5px;
+      text-align: right;
+  }
+  .quote-detail td:nth-child(2), .section td{
+      text-align:left;
+  }
+  .quote-detail  thead {
+      background-color: #233648;
+      color: aliceblue;
+      
+  }
+  .quote-detail  .section td {
+      padding-left: 30px;
+  }
+  .quote-detail  .tag {
+      background-color: #233648;
+      /* text-align: center; */
+      color: aliceblue;
+  }
+  
+  td:first-child{
+      text-align:left ;
+  }
+  .taxes {
+      width: 100%;
+  }
+  .taxes  td{
+      background-color: lightgrey;
+      /* color: black; */
+      /* border-bottom: 1px thin red, */
+  }
+  .taxes th{
+      text-align: left;
+      background-color: #233648;
+      color: aliceblue;
+      
+      -webkit-border-radius: 5px 5px 0px 0px;
+      -moz-border-radius: 5px 5px 0px 0px; 
+      border-radius: 5px 5px 0px 0px;
+  }
+  .taxes  td:last-child{
+     text-align: right;
+  }
+  
+  /*================================================================================
+      Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+      Version: 2.0
+      Author: PIXINVENT
+      Author URL: http://www.themeforest.net/user/pixinvent
+  ================================================================================
+  
+  NOTE:
+  ------
+  PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+  WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+  
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+  body {
+      font-family: "Century Gothic", sans-serif !important;
+      color: #233648 ;
+    }
+    
+    h1,
+    h3,
+    h5,
+    h6 {
+      font-family: "Poppins" !important;
+    }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # progress bar
+  --------------------------------------------------------------*/  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  
+   
+  
+  
+    /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+    
+      /* Rules for icon sizes: */ /* Default */
+  
+      /* Rules for icon opacity: *//* Default */

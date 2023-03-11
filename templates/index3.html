@@ -1,0 +1,442 @@
+{% load static %}
+<html style="box-sizing: border-box; --bs-blue: #49AFDA; --bs-indigo: #6610f2; --bs-purple: #FB9307; --bs-pink: #d63384; --bs-red: #ea5455; --bs-orange: #ff9f43; --bs-yellow: #ffc107; --bs-green: #28c76f; --bs-teal: #20c997; --bs-cyan: #0dcaf0; --bs-white: #fff; --bs-gray: #b8c2cc; --bs-gray-dark: #1e1e1e; --bs-gray-100: #babfc7; --bs-gray-200: #ededed; --bs-gray-300: #dae1e7; --bs-gray-400: #636363; --bs-gray-500: #adb5bd; --bs-gray-600: #b8c2cc; --bs-gray-700: #4e5154; --bs-gray-800: #1e1e1e; --bs-gray-900: #2a2e30; --bs-primary: #FB9307; --bs-secondary: #82868b; --bs-success: #28c76f; --bs-info: #49AFDA; --bs-warning: #ff9f43; --bs-danger: #ea5455; --bs-light: #f6f6f6; --bs-dark: #4b4b4b; --bs-primary-rgb: 254, 176, 60; --bs-secondary-rgb: 130, 134, 139; --bs-success-rgb: 40, 199, 111; --bs-info-rgb: 0, 207, 232; --bs-warning-rgb: 255, 159, 67; --bs-danger-rgb: 234, 84, 85; --bs-light-rgb: 246, 246, 246; --bs-dark-rgb: 75, 75, 75; --bs-white-rgb: 255, 255, 255; --bs-black-rgb: 34, 41, 47; --bs-body-rgb: 110, 107, 123; --bs-font-sans-serif: Century Gothic,CenturyGothic,AppleGothic,sans-serif; --bs-font-monospace: Century Gothic,CenturyGothic,AppleGothic,sans-serif; --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); --bs-body-font-family: var(--bs-font-sans-serif); --bs-body-font-size: 1rem; --bs-body-font-weight: 400; --bs-body-line-height: 1.45; --bs-body-color: #6e6b7b; --bs-body-bg: #f8f8f8; font-size: 14px; height: 100%; letter-spacing: 0.01rem; filter: opacity(1); print-color-adjust: exact; -webkit-print-color-adjust: exact; -webkit-filter: opacity(1);">
+<div id="to_print" class="px-2 py-1" style="box-sizing: border-box; font-size: smaller; padding-right: 1.5rem; padding-left: 1.5rem; padding-top: 1rem; padding-bottom: 1rem;">
+    <!-- ROW BEGIN : pro & doc infos -->
+    <div class="row" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap;">
+        <div class="col-6" style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%;">
+            <div class="card d-flex flex-fill mb-1" style="box-sizing: border-box; position: relative; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 0 solid rgba(34, 41, 47, 0.125); border-radius: 0.428rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; display: flex; flex: 1 1 auto; margin-bottom: 1rem;">
+                <div class="d-flex align-items-center " style="box-sizing: border-box; display: flex; align-items: center;">
+                    <img src="{% static 'pro/idmat/logo/IDMAT.png' %}" width="50" height="50" class="border-info" style="box-sizing: border-box; vertical-align: middle; border-color: #49AFDA; border: 1px solid #49AFDA;">
+                    <h3 class="m-1" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: calc(1.275rem + 0.3vw); font-family: 'Poppins'; margin: 1rem;">ID MAT </h3>
+                </div>
+                <div class=" pt-1" style="box-sizing: border-box; padding-top: 1rem;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">Entrepreneur individuel</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">SIRET : XXXX XXXXX XXXX XXXX</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">N° TVA : XXXX XXXXX XXXX XXXX</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">Adresse : 67 Rue Miromesnil, 75008 Paris, France</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">Tel : 06 66 66 66 66</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">Email : idmat.contact@gmail.com</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%;">
+            <h1 class="bg-gradient-info p-2 text-center rounded" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; font-size: calc(1.325rem + 0.9vw); color: #fff; transition: all 0.2s ease; background-image: linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat: repeat; font-family: 'Poppins'; padding: 1.5rem; text-align: center; border-radius: 0.357rem;">DEVIS INDICATIF </h1>
+            <span class=" badge bg-info " style="box-sizing: border-box; display: inline-block; padding: 0.3rem 0.5rem; font-size: 85%; font-weight: 600; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.358rem; --bs-bg-opacity: 1; background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity));">Devis reçu</span>
+
+        </div>
+    </div>
+    <!-- ROW END : pro & doc infos -->
+    <!-- ROW BEGIN : quotes and client infos -->
+
+    <!-- ROW END : quotes and client infos -->
+    <div class="row " style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap;">
+        <div class="col-6 h-100 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%; height: 100%;">
+            <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><strong style="box-sizing: border-box; font-weight: 600;">Réference du devis : D-A234-2301-001</strong><br style="box-sizing: border-box;">
+                <small style="box-sizing: border-box; font-size: 0.857rem;">Version : 01</small><br style="box-sizing: border-box;">
+                <small style="box-sizing: border-box; font-size: 0.857rem;">Reçu le : 01/12/2022</small><br style="box-sizing: border-box;">
+                <small style="box-sizing: border-box; font-size: 0.857rem;">Expire le : 20/12/2022</small>
+            </p>
+        </div>
+        <div class="col-6 h-100 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%; height: 100%;">
+            <div class="card colored d-flex flex-fill mb-1 border-info" style="box-sizing: border-box; position: relative; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; display: flex; border-color: #49AFDA; flex: 1 1 auto; margin-bottom: 1rem; border: 1px solid #49AFDA;">
+                <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><strong style="box-sizing: border-box; font-weight: 600;">Mme Pauline Dubois</strong><br style="box-sizing: border-box;">
+                    06 66 66 12 23<br style="box-sizing: border-box;">
+                    dubois.pauline@gmail.com<br style="box-sizing: border-box;">
+                    24 Rue Edmond Rostand<br style="box-sizing: border-box;">
+                    33260 <br style="box-sizing: border-box;">
+                    La Teste-de-Buch
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ROW BEGIN : Work & client infos -->
+    <div class="row " style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap;">
+        <div class="col-6 h-100 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%; height: 100%;">
+            <div class="card d-flex flex-fill" style="box-sizing: border-box; position: relative; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 0 solid rgba(34, 41, 47, 0.125); border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; display: flex; flex: 1 1 auto;">
+                <h5 class="pb-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-bottom: 1rem;">Prestation : Rénovation cuisine</h5>
+                <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;"><small style="box-sizing: border-box; font-size: 0.857rem;">Date prévisionnelle de démarrage : 20/12/2022</small><br style="box-sizing: border-box;">
+                    <small style="box-sizing: border-box; font-size: 0.857rem;">Date prévisionnelle de fin de chantier : 20/01/2023</small>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-6 h-100" style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%; height: 100%;">
+            <div class="card colored  align-items-center border-info p-1" style="box-sizing: border-box; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); border-color: #49AFDA; align-items: center; padding: 1rem; border: 1px solid #49AFDA;">
+                <h5 class="m-0 " style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0;">Net à payer : <span class="text-info" style="box-sizing: border-box; --bs-text-opacity: 1; color: rgba(var(--bs-info-rgb), var(--bs-text-opacity));">1 632,50 € </span></h5>
+            </div>
+        </div>
+    </div>
+    <!-- ROW END : Work & client infos -->
+    <!-- TABLE BEGIN : Quote preview -->
+    <table class="quote-detail" style="box-sizing: border-box; caption-side: bottom; border-collapse: collapse; width: 100%; break-inside: avoid; font-size: 12px;" width="100%">
+        <thead style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; background-color: #233648; color: aliceblue;" bgcolor="#233648">
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <th colspan="6" width="50%" class="text-start" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; -webkit-border-radius: 5px 0px 0px 0px; -moz-border-radius: 5px 0px 0px 0px; border-radius: 5px 0px 0px 0px; text-align: left;" align="left">Récapitulatif du devis par section</th>
+                <th class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">Prix total HT</th>
+                <th class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; -webkit-border-radius: 0px 5px 0px 0px; -moz-border-radius: 0px 5px 0px 0px; border-radius: 0px 5px 0px 0px; text-align: right;" align="right">Prix total TTC</th>
+
+            </tr>
+        </thead>
+
+        <tbody style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="6" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">Pièce 1: Cuisine</td>
+                <td class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">1 480,00 € </td>
+                <td class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">1 632,50 € </td>
+            </tr>
+
+
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="6" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">Prestations annexes</td>
+                <td class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">75,00 €</td>
+                <td class="text-end" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">86,00 €</td>
+            </tr>
+
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="4" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: left;" align="left" bgcolor="rgba(46, 167, 212, 0.15)">Prix total HT des prestations</td>
+                <td class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: right;" align="right" bgcolor="rgba(46, 167, 212, 0.15)">1 555,00 €</td>
+            </tr>
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="4" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: left;" align="left" bgcolor="rgba(46, 167, 212, 0.15)">TVA</td>
+                <td class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: right;" align="right" bgcolor="rgba(46, 167, 212, 0.15)">163,50 €</td>
+            </tr>
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="4" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: left;" align="left" bgcolor="rgba(46, 167, 212, 0.15)">Prix total TTC</td>
+                <td class=" colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: right;" align="right" bgcolor="rgba(46, 167, 212, 0.15)">1 718,50 €</td>
+            </tr>
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="4" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: left;" align="left" bgcolor="rgba(46, 167, 212, 0.15)">Remise commerciale (5%)</td>
+                <td class=" colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: right;" align="right" bgcolor="rgba(46, 167, 212, 0.15)">85,93 €</td>
+            </tr>
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="4" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; border-bottom: 1px solid #49AFDA; background-color: rgba(46, 167, 212, 0.15); padding: 5px; text-align: left;" align="left" bgcolor="rgba(46, 167, 212, 0.15)">Prix total TTC remisé</td>
+                <td class="tag font-small-4 " align="right" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right; background-color: #233648; color: aliceblue; font-size: 1rem;" bgcolor="#233648"><strong style="box-sizing: border-box; font-weight: 600;">1 632,50 €</strong></td>
+            </tr>
+            <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                <td colspan="8" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABLE END : Quote preview -->
+    <!-- ROW BEGIN : Billing schedual & Tax recap -->
+    <div class="row d-flex pt-1 font-small-1" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; flex-wrap: wrap; display: flex; padding-top: 1rem; font-size: 0.7rem;">
+        <div class="col-8 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 66.66667%;">
+            <table class="quote-detail " style="box-sizing: border-box; caption-side: bottom; border-collapse: collapse; width: 100%; break-inside: avoid; font-size: 12px;" width="100%">
+                <thead style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; background-color: #233648; color: aliceblue;" bgcolor="#233648">
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <th class="text-start" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; -webkit-border-radius: 5px 0px 0px 0px; -moz-border-radius: 5px 0px 0px 0px; border-radius: 5px 0px 0px 0px; text-align: left;" align="left">Echéance</th>
+                        <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Date</th>
+                        <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">%</th>
+                        <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center; -webkit-border-radius: 0px 5px 0px 0px; -moz-border-radius: 0px 5px 0px 0px; border-radius: 0px 5px 0px 0px;" align="center">Montant</th>
+                    </tr>
+                </thead>
+                <tbody style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">Acompte</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">15/06/2023</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">30%</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">489,77 €</td>
+                    </tr>
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">Solde</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">31/07/2023</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">70%</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">1 142,80 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-4  " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 33.33333%; padding-left: 0;">
+
+            <table class="quote-detail  taxes" style="box-sizing: border-box; caption-side: bottom; border-collapse: collapse; break-inside: avoid; width: 100%; font-size: 12px;" width="100%">
+                <thead style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; background-color: #233648; color: aliceblue;" bgcolor="#233648">
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <th colspan="2" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left; background-color: #233648; color: aliceblue; -webkit-border-radius: 0px 5px 0px 0px; -moz-border-radius: 0px 5px 0px 0px; border-radius: 0px 5px 0px 0px;" align="left" bgcolor="#233648"> <span class="px-1" style="box-sizing: border-box; padding-right: 1rem; padding-left: 1rem;">Répartition de la TVA</span></th>
+
+                    </tr>
+                </thead>
+                <tbody style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right; background-color: lightgrey;" align="right" bgcolor="lightgrey">10%</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; background-color: lightgrey; text-align: right;" bgcolor="lightgrey" align="right">147,50 €</td>
+                    </tr>
+                    <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right; background-color: lightgrey;" align="right" bgcolor="lightgrey">20%</td>
+                        <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; background-color: lightgrey; text-align: right;" bgcolor="lightgrey" align="right">16,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <!-- ROW END : Billing schedual & Tax recap -->
+
+    <!-- ROW BEGIN : Client electronic signature -->
+    <div class="row justify-content-end" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap; page-break-after: always; justify-content: flex-end;">
+        <div class="col-6 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 50%;">
+            <h5 class="pt-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-top: 1rem;">Signature du client :</h5>
+            <div class=" border-info rounded" style="box-sizing: border-box; border-color: #49AFDA; border-radius: 0.357rem; border: 1px solid #49AFDA;">
+                <h6 class="text-bg-light opacity-25 p-2" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1rem; font-family: 'Poppins'; opacity: 0.25; padding: 1.5rem;">Bloc résérvé à la signature éléctronique</h6>
+            </div>
+
+        </div>
+    </div>
+    <!-- ROW END : Client electronic signature -->
+
+
+
+    <!-- TABLE BEGIN : Quote detail -->
+    <div class="row pt-1" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap; padding-top: 1rem;">
+        <table class="quote-detail" style="box-sizing: border-box; caption-side: bottom; border-collapse: collapse; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); width: 100%; break-inside: avoid; font-size: 12px;" width="100%">
+
+            <thead style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; background-color: #233648; color: aliceblue;" bgcolor="#233648">
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center; -webkit-border-radius: 5px 0px 0px 0px; -moz-border-radius: 5px 0px 0px 0px; border-radius: 5px 0px 0px 0px;" align="center">N°</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Designation</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">Qté</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">Unité</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">Prix unit. HT</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">TVA</th>
+
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center;" align="center">Prix total HT</th>
+                    <th style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: center; -webkit-border-radius: 0px 5px 0px 0px; -moz-border-radius: 0px 5px 0px 0px; border-radius: 0px 5px 0px 0px;" align="center">Prix total TTC</th>
+
+                </tr>
+            </thead>
+            <tbody style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+
+                <tr class="section" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td colspan="8" class=" bg-gradient-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; color: #fff; transition: all 0.2s ease; background-image: linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat: repeat; padding: 5px; text-align: left; padding-left: 30px;" align="left" background="linear-gradient(47deg, #49AFDA, #1ce7ff)">Pièce 1: Cuisine</td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">1</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Mise en chantier</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">ENS</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">44,00 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">2</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Protection des pièces, bâchage</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">ENS</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">44,00 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">3</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Dépose d’éléments : ameublement</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">U</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">75,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">75,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">82,50 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">4</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Grattage, lessivage, ponçage et enduit – mur</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">18</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">M2</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">15,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">270,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">297,50 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">5</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Grattage, lessivage, ponçage et enduit – plafond</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">M2</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">18,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">180,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">198,00 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">6</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Fourniture peinture - Mat</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">3</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">L</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">30,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">33,00 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">7</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Fourniture enduit et matériel </td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">ENS</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">45,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">45,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">49,50 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">8</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Application de peinture - Mat - 2 couche(s) - mur</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">25,2</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">M2</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">20,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">504,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">554,40 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">9</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Application de peinture - Mat - 1 couche(s) - plafond</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">12</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">M2</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">18,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">216,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">237,60 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">10</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Livraison de fin de chantier</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">H</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">35,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">35,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">38,50 €</span></td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">11</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Déplacements</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">3</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">ENS</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">15,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">20%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">45,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">54,00 €</span></td>
+                </tr>
+                <tr class="section" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td colspan="8" class=" bg-gradient-info" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; color: #fff; transition: all 0.2s ease; background-image: linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat: repeat; padding: 5px; text-align: left; padding-left: 30px;" align="left" background="linear-gradient(47deg, #49AFDA, #1ce7ff)">Prestations annexes</td>
+                </tr>
+                <tr style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">12</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Nettoyage de fin de chantier</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">U</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">10%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">40,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">44,00 €</span></td>
+                </tr>
+                
+                <tr class="border-bottom" style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0;">
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right">13</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: left;" align="left">Pose de barres de sol</td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">1</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">H</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">35,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">20%</span></td>
+
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">35,00 €</span></td>
+                    <td style="box-sizing: border-box; border-color: inherit; border-style: solid; border-width: 0; padding: 5px; text-align: right;" align="right"><span class="fw-bold" style="box-sizing: border-box; font-weight: 500;">42,00 €</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row d-flex pt-1 font-small-1 px-1 " style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; flex-wrap: wrap; display: flex; padding-right: 1rem; padding-left: 1rem; padding-top: 1rem; font-size: 0.7rem;">
+        <div class="col-12" style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 100%;">
+            <div class="row justify-content-between" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="col me-1  card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-right: 1rem; border: 1px solid #49AFDA;">
+
+                    <h5 style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins';">Adresse de résidence principale</h5>
+                    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;">24 Rue Edmond Rostand<br style="box-sizing: border-box;">
+                        33260 La Teste-de-Buch<br style="box-sizing: border-box;">
+                        France
+                    </p>
+                </div>
+         
+                <div class="col ms-1  card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-left: 1rem; border: 1px solid #49AFDA;">
+
+                    <h5 style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins';">Adresse de facturation </h5>
+                    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;">24 Rue Edmond Rostand<br style="box-sizing: border-box;">
+                        33260 La Teste-de-Buch<br style="box-sizing: border-box;">
+                        France</p>
+                </div>
+            </div>
+            <div class="row justify-content-between" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="col me-1 card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-right: 1rem; border: 1px solid #49AFDA;">
+
+                    <h5 class="pb-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-bottom: 1rem;">Moyens de paiement acceptés</h5>
+                    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;">
+                        CB, Chèque, Virement bancaire.
+                    </p>
+                </div>
+                <div class="col ms-1  card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-left: 1rem; border: 1px solid #49AFDA;">
+
+                    <h5 class="pb-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-bottom: 1rem;">Mentions complémentaires </h5>
+                    <p style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.<br style="box-sizing: border-box;">
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-between" style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div class="col me-1 mb-1  card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-right: 1rem; margin-bottom: 1rem; border: 1px solid #49AFDA;">
+                    <h5 class="pb-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-bottom: 1rem;">Relevé d'Identité Bancaire (RIB) </h5>
+                    <strong style="box-sizing: border-box; font-weight: 600;">Nom de la société :</strong> ID MAT<br style="box-sizing: border-box;">
+                    <strong style="box-sizing: border-box; font-weight: 600;">Adresse : </strong>67 RUE MIROMESNIL, 75008 PARIS<br style="box-sizing: border-box;">
+                    <strong style="box-sizing: border-box; font-weight: 600;">IBAN : </strong>FR76 3000 5016 0800 0201 5363 918<br style="box-sizing: border-box;">
+                    <strong style="box-sizing: border-box; font-weight: 600;">BIC : </strong> BNPAFRPPXXX
+                </div>
+                <div class="col ms-1 mb-1   card colored border-info" style="box-sizing: border-box; flex-shrink: 0; width: 100%; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 1 0 0%; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: rgba(46, 167, 212, 0.15); padding: 1rem; border-color: #49AFDA; margin-bottom: 1rem; margin-left: 1rem; border: 1px solid #49AFDA;">
+                    <h5 class="pb-1 p-0 m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #5e5873; font-size: 1.07rem; font-family: 'Poppins'; margin: 0; padding: 0; padding-bottom: 1rem;">Police d'assurance </h5>
+                    <strong style="box-sizing: border-box; font-weight: 600;">Nom de l'assureur :</strong> Allianz IARD<br style="box-sizing: border-box;">
+                    <strong style="box-sizing: border-box; font-weight: 600;">Numéro de l’assurance :</strong> 542 110 291<br style="box-sizing: border-box;">
+                    <strong style="box-sizing: border-box; font-weight: 600;">Zone de couverture géographique de l’assurance :</strong> France
+                    métropolitaine ou dans les départements et régions d’Outre-mer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row  " style="box-sizing: border-box; --bs-gutter-x: 2rem; --bs-gutter-y: 0; display: flex; flex-wrap: wrap;">
+        <div class="col-12 " style="box-sizing: border-box; flex-shrink: 0; max-width: 100%; margin-top: var(--bs-gutter-y); flex: 0 0 auto; width: 100%;">
+            <div class="card  border-info font-small-2 text-center m-0" style="box-sizing: border-box; position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-clip: border-box; border-radius: 0.428rem; margin-bottom: 2rem; box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1); transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; background-color: lightgrey; border-color: #49AFDA; margin: 0; text-align: center; font-size: 0.8rem; border: 1px solid #49AFDA;">
+                <p class="m-0" style="box-sizing: border-box; margin-top: 0; margin-bottom: 1rem; margin: 0;"> CGV consultables sur votre devis sur 123topela.fr <br style="box-sizing: border-box;">
+                     Avant d’imprimer, pensez à l’environnement </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</html>

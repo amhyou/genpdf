@@ -1,0 +1,110 @@
+
+.dates p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
+    width :50%;
+    text-align:center ;
+}
+.quote-detail{
+    width: 100%;
+    break-inside: avoid;
+}
+.quote-detail input[type="number"] {
+    text-align: center;
+  }
+
+.quote-detail   th:nth-child(1){
+-webkit-border-radius: 5px 0px 0px 0px; 
+-moz-border-radius: 5px 0px 0px 0px; 
+border-radius: 5px 0px 0px 0px; 
+}
+
+.quote-detail   th:nth-last-child(1){
+-webkit-border-radius: 0px 5px 0px 0px;
+-moz-border-radius: 0px 5px 0px 0px; 
+border-radius: 0px 5px 0px 0px;
+}
+.quote-detail  th{
+    padding: 5px;
+    text-align: center;
+}
+ .quote-detail  th:nth-child(2){
+   text-align: left;
+}
+
+.quote-detail  td{
+    padding: 5px;
+    text-align: right;
+}
+.quote-detail td:nth-child(2), .section td{
+    text-align:left;
+}
+.quote-detail  thead {
+    background-color: #233648;
+    color: aliceblue;
+    
+}
+.quote-detail  .section td {
+    padding-left: 30px;
+}
+.quote-detail  .tag {
+    background-color: #233648;
+    /* text-align: center; */
+    color: aliceblue;
+}
+.quote-detail .borderbold {
+    border-width: thin;
+    font-weight:bolder;
+}
+
+.pay th:first-child, td:first-child{
+    text-align:left ;
+}
+.pay td:last-child{
+    text-align:right;
+}
+.pay td{
+    border-width: thin;
+}
+.taxes {
+    width: 100%;
+}
+.taxes  td{
+    background-color: lightgrey;
+    /* color: black; */
+    /* border-bottom: 1px thin red, */
+}
+.taxes th{
+    text-align: left;
+    background-color: #233648;
+    color: aliceblue;
+    
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px; 
+    border-radius: 5px 5px 0px 0px;
+}
+.taxes  td:last-child{
+   text-align: right;
+}
+.signature{
+    border: solid #233648;
+    border-radius: 10px;
+    height: 8em;
+}
+
+.qte input{
+    width:6ch;
+    background-color:#fdf4e8  ;
+    border-width: thin;
+}
+.comment textarea {
+    background-color:#fdf4e8 ;
+    width: 300px;
+    padding: 5px;
+    
+}
+.comment, .qte{
+   /*  background-color: #fdcd84c4; */
+    text-align: center !important;
+}

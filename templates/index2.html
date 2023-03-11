@@ -1,0 +1,534 @@
+<html style="font-size:14px; height:100%; letter-spacing:0.01rem; -webkit-filter:opacity(1); -webkit-print-color-adjust:exact; filter:opacity(1); print-color-adjust:exact" height="100%">
+<head style="clear:both"></head>
+<body style='-webkit-tap-highlight-color:rgba(34, 41, 47, 0); -webkit-text-size-adjust:100%; margin:0; color:#233648; background-color:#f8f8f8; direction:ltr; height:100%; font-family:"Century Gothic", sans-serif' bgcolor="#f8f8f8" height="100%">
+<p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem">{% load static %}
+
+<style>:root {}
+*::before {box-sizing:border-box}
+*::after {box-sizing:border-box}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth
+        }
+    }
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2rem
+        }
+    }
+@media (min-width: 1200px) {
+    h3 {
+        font-size: 1.5rem
+        }
+    }
+.badge:empty {display:none}
+.quote-detail th:nth-child(1) {-webkit-border-radius:5px 0 0 0;-moz-border-radius:5px 0 0 0;border-radius:5px 0 0 0}
+.quote-detail th:nth-last-child(1) {-webkit-border-radius:0 5px 0 0;-moz-border-radius:0 5px 0 0;border-radius:0 5px 0 0}
+.quote-detail th:nth-child(2) {text-align:left}
+.quote-detail td:nth-child(2) {text-align:left}
+.bg-gradient-info:hover {color:#fff}
+.bg-gradient-info:active {color:#fff}
+.bg-gradient-info:active {transform:translatey(0)}
+.bg-gradient-info:active {background-image:linear-gradient(47deg, #00a1b5, #49AFDA);background-repeat:repeat}
+.bg-gradient-info:focus {background-image:linear-gradient(47deg, #00a1b5, #49AFDA);background-repeat:repeat}
+@media screen and (min-width: 0) {
+    head {
+        font-family: "xs 0px"
+        }
+    body:after {
+        content: "xs - min-width: 0px"
+        }
+    }
+@media screen and (min-width: 544px) {
+    head {
+        font-family: "sm 544px"
+        }
+    body:after {
+        content: "sm - min-width: 544px"
+        }
+    }
+@media screen and (min-width: 768px) {
+    head {
+        font-family: "md 768px"
+        }
+    body:after {
+        content: "md - min-width: 768px"
+        }
+    }
+@media screen and (min-width: 992px) {
+    head {
+        font-family: "lg 992px"
+        }
+    body:after {
+        content: "lg - min-width: 992px"
+        }
+    }
+@media screen and (min-width: 1200px) {
+    head {
+        font-family: "xl 1200px"
+        }
+    body:after {
+        content: "xl - min-width: 1200px"
+        }
+    }
+body:after {display:none}</style>
+</p>
+<div id="to_print" class="px-2 py-1" style="font-size:smaller; padding-left:1.5rem; padding-right:1.5rem; padding-bottom:1rem; padding-top:1rem">
+    <!-- ROW BEGIN : pro & doc infos -->
+    <div class="row" style="display:flex; flex-wrap:wrap">
+        <div class="col-6" style="flex:0 0 auto; width:50%" width="50%">
+            <div class="card d-flex flex-fill mb-1" style="background-clip:border-box; background-color:#fff; border:0 solid rgba(34, 41, 47, 0.125); border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:1rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; flex:1 1 auto" bgcolor="#ffffff">
+                <div class="d-flex align-items-center " style="display:flex; align-items:center">
+                    <img src="%7B%%20static%20'pro/idmat/logo/IDMAT.png'%20%%7D" width="50" height="50" class="border-info" style="vertical-align:middle; border-color:#49AFDA; border:1px solid #49AFDA" valign="middle">
+                    <h3 class="m-1" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:calc(1.275rem + 0.3vw); margin:1rem'>ID MAT </h3>
+                </div>
+                <div class=" pt-1" style="padding-top:1rem">
+                    <small style="font-size:0.857rem">Entrepreneur individuel</small><br>
+                    <small style="font-size:0.857rem">SIRET : XXXX XXXXX XXXX XXXX</small><br>
+                    <small style="font-size:0.857rem">N° TVA : XXXX XXXXX XXXX XXXX</small><br>
+                    <small style="font-size:0.857rem">Adresse : 67 Rue Miromesnil, 75008 Paris, France</small><br>
+                    <small style="font-size:0.857rem">Tel : 06 66 66 66 66</small><br>
+                    <small style="font-size:0.857rem">Email : idmat.contact@gmail.com</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 " style="flex:0 0 auto; width:50%" width="50%">
+            <h1 class="bg-gradient-info p-2 text-center rounded" style='color:#fff; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:calc(1.325rem + 0.9vw); background-image:linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat:repeat; transition:all 0.2s ease; padding:1.5rem; text-align:center; border-radius:0.357rem' align="center">DEVIS INDICATIF </h1>
+            <span class=" badge bg-info " style="border-radius:0.358rem; color:#fff; display:inline-block; font-size:85%; font-weight:600; line-height:1; padding:0.3rem 0.5rem; text-align:center; vertical-align:baseline; white-space:nowrap" align="center" valign="baseline">Devis reçu</span>
+
+        </div>
+    </div>
+    <!-- ROW END : pro & doc infos -->
+    <!-- ROW BEGIN : quotes and client infos -->
+
+    <!-- ROW END : quotes and client infos -->
+    <div class="row " style="display:flex; flex-wrap:wrap">
+        <div class="col-6 h-100 " style="flex:0 0 auto; width:50%; height:100%" width="50%" height="100%">
+            <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem"><strong style="font-weight:600">Réference du devis : D-A234-2301-001</strong><br>
+                <small style="font-size:0.857rem">Version : 01</small><br>
+                <small style="font-size:0.857rem">Reçu le : 01/12/2022</small><br>
+                <small style="font-size:0.857rem">Expire le : 20/12/2022</small>
+            </p>
+        </div>
+        <div class="col-6 h-100 " style="flex:0 0 auto; width:50%; height:100%" width="50%" height="100%">
+            <div class="card colored d-flex flex-fill mb-1 border-info" style="background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:1rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; flex:1 1 auto" bgcolor="rgba(46, 167, 212, 15%)">
+                <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem"><strong style="font-weight:600">Mme Pauline Dubois</strong><br>
+                    06 66 66 12 23<br>
+                    dubois.pauline@gmail.com<br>
+                    24 Rue Edmond Rostand<br>
+                    33260 <br>
+                    La Teste-de-Buch
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ROW BEGIN : Work & client infos -->
+    <div class="row " style="display:flex; flex-wrap:wrap">
+        <div class="col-6 h-100 " style="flex:0 0 auto; width:50%; height:100%" width="50%" height="100%">
+            <div class="card d-flex flex-fill" style="background-clip:border-box; background-color:#fff; border:0 solid rgba(34, 41, 47, 0.125); border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; flex:1 1 auto" bgcolor="#ffffff">
+                <h5 class="pb-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-bottom:1rem'>Prestation : Rénovation cuisine</h5>
+                <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem"><small style="font-size:0.857rem">Date prévisionnelle de démarrage : 20/12/2022</small><br>
+                    <small style="font-size:0.857rem">Date prévisionnelle de fin de chantier : 20/01/2023</small>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-6 h-100" style="flex:0 0 auto; width:50%; height:100%" width="50%" height="100%">
+            <div class="card colored  align-items-center border-info p-1" style="background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; align-items:center" bgcolor="rgba(46, 167, 212, 15%)">
+                <h5 class="m-0 " style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0'>Net à payer : <span class="text-info">1 632,50 € </span>
+</h5>
+            </div>
+        </div>
+    </div>
+    <!-- ROW END : Work & client infos -->
+    <!-- TABLE BEGIN : Quote preview -->
+    <table class="quote-detail" style="border-collapse:collapse; caption-side:bottom; break-inside:avoid; width:100%; font-size:12px" width="100%">
+        <thead style="border-color:inherit; border-style:solid; border-width:0; background-color:#233648; color:aliceblue" bgcolor="#233648">
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <th colspan="6" width="50%" class="text-start" style="text-align:left; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="left">Récapitulatif du devis par section</th>
+                <th class="text-end" style="text-align:right; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="right">Prix total HT</th>
+                <th class="text-end" style="text-align:right; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="right">Prix total TTC</th>
+
+            </tr>
+        </thead>
+
+        <tbody style="border-color:inherit; border-style:solid; border-width:0">
+
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="6" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">Pièce 1: Cuisine</td>
+                <td class="text-end" style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">1 480,00 € </td>
+                <td class="text-end" style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">1 632,50 € </td>
+            </tr>
+
+
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="6" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">Prestations annexes</td>
+                <td class="text-end" style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">75,00 €</td>
+                <td class="text-end" style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">86,00 €</td>
+            </tr>
+
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="4" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">Prix total HT des prestations</td>
+                <td class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">1 555,00 €</td>
+            </tr>
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="4" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">TVA</td>
+                <td class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">163,50 €</td>
+            </tr>
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="4" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">Prix total TTC</td>
+                <td class=" colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">1 718,50 €</td>
+            </tr>
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="4" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">Remise commerciale (5%)</td>
+                <td class=" colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">85,93 €</td>
+            </tr>
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="4" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+                <td colspan="3" class="colored border-bottom-info" style="border-color:inherit; border-style:solid; border-width:0; border-bottom:1px solid #49AFDA; background-color:rgba(46, 167, 212, 15%); padding:5px; text-align:right" bgcolor="rgba(46, 167, 212, 15%)" align="right">Prix total TTC remisé</td>
+                <td class="tag font-small-4 " align="right" style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right; background-color:#233648; color:aliceblue; font-size:1rem" bgcolor="#233648"><strong style="font-weight:600">1 632,50 €</strong></td>
+            </tr>
+            <tr style="border-color:inherit; border-style:solid; border-width:0">
+                <td colspan="8" style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABLE END : Quote preview -->
+    <!-- ROW BEGIN : Billing schedual & Tax recap -->
+    <div class="row d-flex pt-1 font-small-1" style="display:flex; flex-wrap:wrap; padding-top:1rem; font-size:0.7rem">
+        <div class="col-8 " style="flex:0 0 auto; width:66.66667%" width="66.66667%">
+            <table class="quote-detail " style="border-collapse:collapse; caption-side:bottom; break-inside:avoid; width:100%; font-size:12px" width="100%">
+                <thead style="border-color:inherit; border-style:solid; border-width:0; background-color:#233648; color:aliceblue" bgcolor="#233648">
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <th class="text-start" style="text-align:left; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="left">Echéance</th>
+                        <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Date</th>
+                        <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">%</th>
+                        <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Montant</th>
+                    </tr>
+                </thead>
+                <tbody style="border-color:inherit; border-style:solid; border-width:0">
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">Acompte</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">15/06/2023</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">30%</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">489,77 €</td>
+                    </tr>
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">Solde</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">31/07/2023</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">70%</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">1 142,80 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-4  " style="flex:0 0 auto; width:33.33333%; padding-left:0" width="33.33333%">
+
+            <table class="quote-detail  taxes" style="border-collapse:collapse; caption-side:bottom; break-inside:avoid; width:100%; font-size:12px" width="100%">
+                <thead style="border-color:inherit; border-style:solid; border-width:0; background-color:#233648; color:aliceblue" bgcolor="#233648">
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <th colspan="2" style="text-align:left; border-color:inherit; border-style:solid; border-width:0; padding:5px; -moz-border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0; background-color:#233648; border-radius:5px 5px 0 0; color:aliceblue" align="left" bgcolor="#233648"> <span class="px-1" style="padding-left:1rem; padding-right:1rem">Répartition de la TVA</span>
+</th>
+
+                    </tr>
+                </thead>
+                <tbody style="border-color:inherit; border-style:solid; border-width:0">
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px; background-color:lightgrey" align="right" bgcolor="lightgrey">10%</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right; background-color:lightgrey" align="right" bgcolor="lightgrey">147,50 €</td>
+                    </tr>
+                    <tr style="border-color:inherit; border-style:solid; border-width:0">
+                        <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px; background-color:lightgrey" align="right" bgcolor="lightgrey">20%</td>
+                        <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right; background-color:lightgrey" align="right" bgcolor="lightgrey">16,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <!-- ROW END : Billing schedual & Tax recap -->
+
+    <!-- ROW BEGIN : Client electronic signature -->
+    <div class="row justify-content-end" style="display:flex; flex-wrap:wrap; justify-content:flex-end; page-break-after:always">
+        <div class="col-6 " style="flex:0 0 auto; width:50%" width="50%">
+            <h5 class="pt-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-top:1rem'>Signature du client :</h5>
+            <div class=" border-info rounded" style="border-color:#49AFDA; border-radius:0.357rem; border:1px solid #49AFDA">
+                <h6 class="text-bg-light opacity-25 p-2" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1rem; opacity:0.25; padding:1.5rem'>Bloc résérvé à la signature éléctronique</h6>
+            </div>
+
+        </div>
+    </div>
+    <!-- ROW END : Client electronic signature -->
+
+
+
+    <!-- TABLE BEGIN : Quote detail -->
+    <div class="row pt-1" style="display:flex; flex-wrap:wrap; padding-top:1rem">
+        <table class="quote-detail" style="border-collapse:collapse; caption-side:bottom; break-inside:avoid; width:100%; font-size:12px" width="100%">
+
+            <thead style="border-color:inherit; border-style:solid; border-width:0; background-color:#233648; color:aliceblue" bgcolor="#233648">
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">N°</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Designation</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Qté</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Unité</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Prix unit. HT</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">TVA</th>
+
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Prix total HT</th>
+                    <th style="text-align:center; border-color:inherit; border-style:solid; border-width:0; padding:5px" align="center">Prix total TTC</th>
+
+                </tr>
+            </thead>
+            <tbody style="border-color:inherit; border-style:solid; border-width:0">
+
+                <tr class="section" style="border-color:inherit; border-style:solid; border-width:0">
+                    <td colspan="8" class=" bg-gradient-info" style="border-color:inherit; border-style:solid; border-width:0; text-align:left; background-image:linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat:repeat; color:#fff; transition:all 0.2s ease; padding:5px; padding-left:30px" align="left">Pièce 1: Cuisine</td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">1</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Mise en chantier</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">ENS</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">44,00 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">2</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Protection des pièces, bâchage</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">ENS</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">44,00 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">3</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Dépose d’éléments : ameublement</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">U</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">75,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">75,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">82,50 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">4</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Grattage, lessivage, ponçage et enduit – mur</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">18</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">M2</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">15,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">270,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">297,50 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">5</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Grattage, lessivage, ponçage et enduit – plafond</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">M2</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">18,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">180,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">198,00 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">6</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Fourniture peinture - Mat</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">3</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">L</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">30,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">33,00 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">7</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Fourniture enduit et matériel </td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">ENS</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">45,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">45,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">49,50 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">8</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Application de peinture - Mat - 2 couche(s) - mur</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">25,2</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">M2</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">20,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">504,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">554,40 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">9</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Application de peinture - Mat - 1 couche(s) - plafond</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">12</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">M2</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">18,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">216,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">237,60 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">10</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Livraison de fin de chantier</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">H</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">35,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">35,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">38,50 €</span></td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">11</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Déplacements</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">3</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">ENS</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">15,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">20%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">45,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">54,00 €</span></td>
+                </tr>
+                <tr class="section" style="border-color:inherit; border-style:solid; border-width:0">
+                    <td colspan="8" class=" bg-gradient-info" style="border-color:inherit; border-style:solid; border-width:0; text-align:left; background-image:linear-gradient(47deg, #49AFDA, #1ce7ff); background-repeat:repeat; color:#fff; transition:all 0.2s ease; padding:5px; padding-left:30px" align="left">Prestations annexes</td>
+                </tr>
+                <tr style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">12</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Nettoyage de fin de chantier</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">U</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">10%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">40,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">44,00 €</span></td>
+                </tr>
+                
+                <tr class="border-bottom" style="border-color:inherit; border-style:solid; border-width:0">
+                    <td style="border-color:inherit; border-style:solid; border-width:0; text-align:right; padding:5px" align="right">13</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right">Pose de barres de sol</td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">1</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">H</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">35,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">20%</span></td>
+
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">35,00 €</span></td>
+                    <td style="border-color:inherit; border-style:solid; border-width:0; padding:5px; text-align:right" align="right"><span class="fw-bold" style="font-weight:500">42,00 €</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- TABLE END : Quote detail -->
+   
+
+
+    <!-- ROW BEGIN : Billing and worksite adresses / Payement methods & complementary mentions -->
+    <div class="row d-flex pt-1 font-small-1 px-1 " style="display:flex; flex-wrap:wrap; padding-left:1rem; padding-right:1rem; padding-top:1rem; font-size:0.7rem">
+        <div class="col-12" style="flex:0 0 auto; width:100%" width="100%">
+            <div class="row justify-content-between" style="display:flex; flex-wrap:wrap; justify-content:space-between">
+                <div class="col me-1  card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-right:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+
+                    <h5 style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem'>Adresse de résidence principale</h5>
+                    <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem">24 Rue Edmond Rostand<br>
+                        33260 La Teste-de-Buch<br>
+                        France
+                    </p>
+                </div>
+                <!-- Invoice legal options  -->
+                <!-- Invoice Legal options -->
+                <div class="col ms-1  card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-left:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+
+                    <h5 style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem'>Adresse de facturation </h5>
+                    <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem">24 Rue Edmond Rostand<br>
+                        33260 La Teste-de-Buch<br>
+                        France</p>
+                </div>
+            </div>
+            <div class="row justify-content-between" style="display:flex; flex-wrap:wrap; justify-content:space-between">
+                <div class="col me-1 card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-right:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+
+                    <h5 class="pb-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-bottom:1rem'>Moyens de paiement acceptés</h5>
+                    <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem">
+                        CB, Chèque, Virement bancaire.
+                    </p>
+                </div>
+                <div class="col ms-1  card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-left:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+
+                    <h5 class="pb-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-bottom:1rem'>Mentions complémentaires </h5>
+                    <p style="margin-bottom:1rem; margin-top:0; line-height:1.5rem">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-between" style="display:flex; flex-wrap:wrap; justify-content:space-between">
+                <div class="col me-1 mb-1  card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:1rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-right:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+                    <h5 class="pb-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-bottom:1rem'>Relevé d'Identité Bancaire (RIB) </h5>
+                    <strong style="font-weight:600">Nom de la société :</strong> ID MAT<br>
+                    <strong style="font-weight:600">Adresse : </strong>67 RUE MIROMESNIL, 75008 PARIS<br>
+                    <strong style="font-weight:600">IBAN : </strong>FR76 3000 5016 0800 0201 5363 918<br>
+                    <strong style="font-weight:600">BIC : </strong> BNPAFRPPXXX
+                </div>
+                <div class="col ms-1 mb-1   card colored border-info" style="flex:1 0 0%; background-clip:border-box; background-color:rgba(46, 167, 212, 15%); border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:1rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; padding:1rem; border-color:#49AFDA; margin-left:1rem" bgcolor="rgba(46, 167, 212, 15%)">
+                    <h5 class="pb-1 p-0 m-0" style='color:#5e5873; font-family:"Poppins"; font-weight:500; line-height:1.2; margin-bottom:0.5rem; margin-top:0; font-size:1.07rem; margin:0; padding:0; padding-bottom:1rem'>Police d'assurance </h5>
+                    <strong style="font-weight:600">Nom de l'assureur :</strong> Allianz IARD<br>
+                    <strong style="font-weight:600">Numéro de l’assurance :</strong> 542 110 291<br>
+                    <strong style="font-weight:600">Zone de couverture géographique de l’assurance :</strong> France
+                    métropolitaine ou dans les départements et régions d’Outre-mer
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ROW END : Billing and worksite adresses / Payement methods & complementary mentions -->
+
+
+
+    
+    <!-- ROW BEGIN :  Message -->
+    <div class="row  " style="display:flex; flex-wrap:wrap">
+        <div class="col-12 " style="flex:0 0 auto; width:100%" width="100%">
+            <div class="card  border-info font-small-2 text-center m-0" style="background-clip:border-box; background-color:lightgrey; border:1px solid #49AFDA; border-radius:0.428rem; display:flex; flex-direction:column; min-width:0; position:relative; word-wrap:break-word; box-shadow:0 4px 24px 0 rgba(34, 41, 47, 0.1); margin-bottom:2rem; transition:all 0.3s ease-in-out, background 0s, color 0s, border-color 0s; border-color:#49AFDA; margin:0; text-align:center; font-size:0.8rem" bgcolor="lightgrey" align="center">
+                <p class="m-0" style="margin-bottom:1rem; margin-top:0; line-height:1.5rem; margin:0"> CGV consultables sur votre devis sur 123topela.fr <br>
+                     Avant d’imprimer, pensez à l’environnement </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ROW END : Message -->
+
+
+</div>
+
+</body>
+</html>

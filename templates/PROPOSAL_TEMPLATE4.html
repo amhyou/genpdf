@@ -1,0 +1,497 @@
+{% load static %}
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'app-invoice.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'vendors.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap-extended.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'invoice.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'colors.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'components.css' %}">
+<style>
+    html {
+        filter: opacity(1);
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        -webkit-filter: opacity(1);
+    }
+
+    #to_print {
+        font-size: smaller;
+    }
+
+
+    .quote-detail {
+        font-size: 12px;
+    }
+
+
+
+    .colored {
+        background-color: rgba(46, 167, 212, 15%);
+        /* border: 1px solid rgba(46, 167, 212, 10%); */
+        padding: 1rem;
+
+    }
+
+    .bg-light-info {
+        border-bottom: 1px thin red;
+    }
+</style>
+<div id="to_print" class="px-2 py-1" >
+    <!-- ROW BEGIN : pro & doc infos -->
+    <div class="row">
+        <div class="col-6">
+            <div class="card d-flex flex-fill mb-1">
+                <div class="d-flex align-items-center ">
+                    <img src="{% static 'pro/idmat/logo/IDMAT.png' %}" width="50" height="50" class="border-info">
+                    <h3 class="m-1">ID MAT </h3>
+                </div>
+                <div class=" pt-1">
+                    <small>Entrepreneur individuel</small><br>
+                    <small>SIRET : XXXX XXXXX XXXX XXXX</small><br />
+                    <small>N° TVA : XXXX XXXXX XXXX XXXX</small><br />
+                    <small>Adresse : 67 Rue Miromesnil, 75008 Paris, France</small><br />
+                    <small>Tel : 06 66 66 66 66</small><br>
+                    <small>Email : idmat.contact@gmail.com</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 ">
+            <h1 class="bg-gradient-info p-2 text-center rounded">DEVIS INDICATIF </h1>
+            <span class=" badge bg-info ">Devis reçu</span>
+
+        </div>
+    </div>
+    <!-- ROW END : pro & doc infos -->
+    <!-- ROW BEGIN : quotes and client infos -->
+
+    <!-- ROW END : quotes and client infos -->
+    <div class="row ">
+        <div class="col-6 h-100 ">
+            <p><strong>Réference du devis : D-A234-2301-001</strong><br>
+                <small>Version : 01</small><br>
+                <small>Reçu le : 01/12/2022</small><br>
+                <small>Expire le : 20/12/2022</small>
+            </p>
+        </div>
+        <div class="col-6 h-100 ">
+            <div class="card colored d-flex flex-fill mb-1 border-info">
+                <p><strong>Mme Pauline Dubois</strong><br>
+                    06 66 66 12 23<br>
+                    dubois.pauline@gmail.com<br>
+                    24 Rue Edmond Rostand<br>
+                    33260 <br>
+                    La Teste-de-Buch
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ROW BEGIN : Work & client infos -->
+    <div class="row ">
+        <div class="col-6 h-100 ">
+            <div class="card d-flex flex-fill">
+                <h5 class="pb-1 p-0 m-0">Prestation : Rénovation cuisine</h5>
+                <p><small>Date prévisionnelle de démarrage : 20/12/2022</small><br>
+                    <small>Date prévisionnelle de fin de chantier : 20/01/2023</small>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-6 h-100">
+            <div class="card colored  align-items-center border-info p-1">
+                <h5 class="m-0 ">Net à payer : <span class="text-info">1 632,50 € </span></h5>
+            </div>
+        </div>
+    </div>
+    <!-- ROW END : Work & client infos -->
+    <!-- TABLE BEGIN : Quote preview -->
+    <table class="quote-detail">
+        <thead>
+            <tr>
+                <th colspan="6" width="50%" class="text-start">Récapitulatif du devis par section</th>
+                <th class="text-end">Prix total HT</th>
+                <th class="text-end">Prix total TTC</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td colspan="6">Pièce 1: Cuisine</td>
+                <td class="text-end">1 480,00 € </td>
+                <td class="text-end">1 632,50 € </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="6">Prestations annexes</td>
+                <td class="text-end">75,00 €</td>
+                <td class="text-end">86,00 €</td>
+            </tr>
+
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">Prix total HT des prestations</td>
+                <td class="colored border-bottom-info">1 555,00 €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">TVA</td>
+                <td class="colored border-bottom-info">163,50 €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">Prix total TTC</td>
+                <td class=" colored border-bottom-info">1 718,50 €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">Remise commerciale (5%)</td>
+                <td class=" colored border-bottom-info">85,93 €</td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="3" class="colored border-bottom-info">Prix total TTC remisé</td>
+                <td class="tag font-small-4 " align="right"><strong>1 632,50 €</strong></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TABLE END : Quote preview -->
+    <!-- ROW BEGIN : Billing schedual & Tax recap -->
+    <div class="row d-flex pt-1 font-small-1">
+        <div class="col-8 ">
+            <table class="quote-detail ">
+                <thead>
+                    <tr>
+                        <th class="text-start">Echéance</th>
+                        <th>Date</th>
+                        <th>%</th>
+                        <th>Montant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acompte</td>
+                        <td>15/06/2023</td>
+                        <td>30%</td>
+                        <td>489,77 €</td>
+                    </tr>
+                    <tr>
+                        <td>Solde</td>
+                        <td>31/07/2023</td>
+                        <td>70%</td>
+                        <td>1 142,80 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-4  " style="padding-left: 0;">
+
+            <table class="quote-detail  taxes">
+                <thead>
+                    <tr>
+                        <th colspan="2"> <span class="px-1">Répartition de la TVA</span></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10%</td>
+                        <td>147,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>20%</td>
+                        <td>16,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <!-- ROW END : Billing schedual & Tax recap -->
+
+    <!-- ROW BEGIN : Client electronic signature -->
+    <div class="row justify-content-end" style="page-break-after: always;">
+        <div class="col-6 ">
+            <h5 class="pt-1 p-0 m-0">Signature du client :</h5>
+            <div class=" border-info rounded">
+                <h6 class="text-bg-light opacity-25 p-2">Bloc résérvé à la signature éléctronique</h6>
+            </div>
+
+        </div>
+    </div>
+    <!-- ROW END : Client electronic signature -->
+
+
+
+    <!-- TABLE BEGIN : Quote detail -->
+    <div class="row pt-1" >
+        <table class="quote-detail">
+
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Designation</th>
+                    <th>Qté</th>
+                    <th>Unité</th>
+                    <th>Prix unit. HT</th>
+                    <th>TVA</th>
+
+                    <th>Prix total HT</th>
+                    <th>Prix total TTC</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="section">
+                    <td colspan="8" class=" bg-gradient-info">Pièce 1: Cuisine</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mise en chantier</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">ENS</span></td>
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">44,00 €</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Protection des pièces, bâchage</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">ENS</span></td>
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">44,00 €</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dépose d’éléments : ameublement</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">U</span></td>
+                    <td><span class="fw-bold">75,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">75,00 €</span></td>
+                    <td><span class="fw-bold">82,50 €</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Grattage, lessivage, ponçage et enduit – mur</td>
+                    <td><span class="fw-bold">18</span></td>
+                    <td><span class="fw-bold">M2</span></td>
+                    <td><span class="fw-bold">15,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">270,00 €</span></td>
+                    <td><span class="fw-bold">297,50 €</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Grattage, lessivage, ponçage et enduit – plafond</td>
+                    <td><span class="fw-bold">10</span></td>
+                    <td><span class="fw-bold">M2</span></td>
+                    <td><span class="fw-bold">18,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">180,00 €</span></td>
+                    <td><span class="fw-bold">198,00 €</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fourniture peinture - Mat</td>
+                    <td><span class="fw-bold">3</span></td>
+                    <td><span class="fw-bold">L</span></td>
+                    <td><span class="fw-bold">10,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">30,00 €</span></td>
+                    <td><span class="fw-bold">33,00 €</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Fourniture enduit et matériel </td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">ENS</span></td>
+                    <td><span class="fw-bold">45,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">45,00 €</span></td>
+                    <td><span class="fw-bold">49,50 €</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Application de peinture - Mat - 2 couche(s) - mur</td>
+                    <td><span class="fw-bold">25,2</span></td>
+                    <td><span class="fw-bold">M2</span></td>
+                    <td><span class="fw-bold">20,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">504,00 €</span></td>
+                    <td><span class="fw-bold">554,40 €</span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Application de peinture - Mat - 1 couche(s) - plafond</td>
+                    <td><span class="fw-bold">12</span></td>
+                    <td><span class="fw-bold">M2</span></td>
+                    <td><span class="fw-bold">18,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">216,00 €</span></td>
+                    <td><span class="fw-bold">237,60 €</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Livraison de fin de chantier</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">H</span></td>
+                    <td><span class="fw-bold">35,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">35,00 €</span></td>
+                    <td><span class="fw-bold">38,50 €</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Déplacements</td>
+                    <td><span class="fw-bold">3</span></td>
+                    <td><span class="fw-bold">ENS</span></td>
+                    <td><span class="fw-bold">15,00 €</span></td>
+                    <td><span class="fw-bold">20%</span></td>
+
+                    <td><span class="fw-bold">45,00 €</span></td>
+                    <td><span class="fw-bold">54,00 €</span></td>
+                </tr>
+                <tr class="section">
+                    <td colspan="8" class=" bg-gradient-info">Prestations annexes</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Nettoyage de fin de chantier</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">U</span></td>
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">10%</span></td>
+
+                    <td><span class="fw-bold">40,00 €</span></td>
+                    <td><span class="fw-bold">44,00 €</span></td>
+                </tr>
+                
+                <tr class="border-bottom">
+                    <td>13</td>
+                    <td>Pose de barres de sol</td>
+                    <td><span class="fw-bold">1</span></td>
+                    <td><span class="fw-bold">H</span></td>
+                    <td><span class="fw-bold">35,00 €</span></td>
+                    <td><span class="fw-bold">20%</span></td>
+
+                    <td><span class="fw-bold">35,00 €</span></td>
+                    <td><span class="fw-bold">42,00 €</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- TABLE END : Quote detail -->
+   
+
+
+    <!-- ROW BEGIN : Billing and worksite adresses / Payement methods & complementary mentions -->
+    <div class="row d-flex pt-1 font-small-1 px-1 " >
+        <div class="col-12">
+            <div class="row justify-content-between">
+                <div class="col me-1  card colored border-info">
+
+                    <h5>Adresse de résidence principale</h5>
+                    <p>24 Rue Edmond Rostand<br>
+                        33260 La Teste-de-Buch<br>
+                        France
+                    </p>
+                </div>
+                <!-- Invoice legal options  -->
+                <!-- Invoice Legal options -->
+                <div class="col ms-1  card colored border-info">
+
+                    <h5>Adresse de facturation </h5>
+                    <p>24 Rue Edmond Rostand<br>
+                        33260 La Teste-de-Buch<br>
+                        France</p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col me-1 card colored border-info">
+
+                    <h5 class="pb-1 p-0 m-0">Moyens de paiement acceptés</h5>
+                    <p>
+                        CB, Chèque, Virement bancaire.
+                    </p>
+                </div>
+                <div class="col ms-1  card colored border-info">
+
+                    <h5 class="pb-1 p-0 m-0">Mentions complémentaires </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col me-1 mb-1  card colored border-info">
+                    <h5 class="pb-1 p-0 m-0">Relevé d'Identité Bancaire (RIB) </h5>
+                    <strong>Nom de la société :</strong> ID MAT<br>
+                    <strong>Adresse : </strong>67 RUE MIROMESNIL, 75008 PARIS<br>
+                    <strong>IBAN : </strong>FR76 3000 5016 0800 0201 5363 918<br>
+                    <strong>BIC : </strong> BNPAFRPPXXX
+                </div>
+                <div class="col ms-1 mb-1   card colored border-info">
+                    <h5 class="pb-1 p-0 m-0">Police d'assurance </h5>
+                    <strong>Nom de l'assureur :</strong> Allianz IARD<br>
+                    <strong>Numéro de l’assurance :</strong> 542 110 291<br>
+                    <strong>Zone de couverture géographique de l’assurance :</strong> France
+                    métropolitaine ou dans les départements et régions d’Outre-mer
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ROW END : Billing and worksite adresses / Payement methods & complementary mentions -->
+
+
+
+    
+    <!-- ROW BEGIN :  Message -->
+    <div class="row  ">
+        <div class="col-12 ">
+            <div class="card  border-info font-small-2 text-center m-0" style="background-color: lightgrey;">
+                <p class="m-0"> CGV consultables sur votre devis sur 123topela.fr <br>
+                     Avant d’imprimer, pensez à l’environnement </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ROW END : Message -->
+
+</div>
+</html>

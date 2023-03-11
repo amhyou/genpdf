@@ -21,7 +21,8 @@ def generate_pdf(request):
     with open('proposals/output.pdf', 'rb') as f:
         pdf_data = f.read()
     response = HttpResponse(pdf_data, content_type='application/pdf')
-    response['Content-Disposition'] = 'inline; filename=output.pdf'
+    response['Content-Disposition'] = 'attachment; filename=output.pdf'
+    #response['Content-Disposition'] = 'inline; filename=output.pdf'
     return response
 
 def view_pdf(request):
